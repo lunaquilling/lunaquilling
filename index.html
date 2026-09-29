@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Luna Quilling — handmade quilling art, personalized frames and custom paper memories by Rathana. India-wide enquiries and delivery.">
+<title>Luna Quilling — Crafting Your Memories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><img src="assets/logo.jpeg" alt="Luna Quilling logo"><span>Luna Quilling</span></a>
+  <nav>
+    <a href="#gallery">My work</a><a href="#references">References</a><a href="#collections">Ideas</a><a href="#custom">Enquire</a><a href="#how">How it works</a>
+  </nav>
+  <a class="nav-cta" href="#custom">Start an enquiry</a>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">HANDMADE • PERSONALIZED • INDIA-WIDE DELIVERY</p>
+    <h1>Paper, patience,<br><em>memories.</em></h1>
+    <p class="lead">Quilling artwork made around your names, celebrations, portraits and stories. Choose an existing idea or send a reference for something custom.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#custom" data-custom>Create a custom piece</a>
+      <a class="btn ghost" href="#collections">Explore ideas</a>
+      <a class="btn whatsapp" href="#custom">Send an enquiry</a>
+    </div>
+    <div class="trust-row"><span>✦ Made to order</span><span>✦ Personalized follow-up</span><span>✦ All-India enquiries</span></div>
+  </div>
+  <div class="hero-art">
+    <div class="hero-ring"></div>
+    <img src="works/WhatsApp Image 2026-09-29 at 2.39.36 PM.jpeg" alt="Luna Quilling floral name artwork">
+    <div class="floating-note"><span>♡</span> Crafted by Rathana</div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="section-head"><div><p class="eyebrow">LUNA QUILLING PORTFOLIO</p><h2>Real pieces supplied for Luna Quilling.</h2></div><a href="#custom" class="text-link">Request something similar →</a></div>
+  <div class="gallery portfolio-grid" id="workGallery"></div>
+  <nav class="reference-pagination" id="workPagination" aria-label="Work catalogue pages">
+    <button id="workPrevious" type="button">Previous</button>
+    <div class="pagination-pages" id="workPageNumbers"></div>
+    <span id="workPageStatus" aria-live="polite"></span>
+    <button id="workNext" type="button">Next</button>
+  </nav>
+  <p class="small-note" id="workGalleryStatus" aria-live="polite">Loading artwork…</p>
+</section>
+
+<section id="references" class="section warm">
+  <div class="section-head"><div><p class="eyebrow">REFERENCES & INSPIRATION</p><h2>Ideas for your next piece.</h2></div><label class="reference-filter" for="referencesCategory">Category<select id="referencesCategory"><option value="all">All categories</option></select></label></div>
+  <div class="gallery references-grid" id="referencesGallery"></div>
+  <nav class="reference-pagination" id="referencesPagination" aria-label="Reference catalogue pages">
+    <button id="referencesPrevious" type="button">Previous</button>
+    <div class="pagination-pages" id="referencesPageNumbers"></div>
+    <span id="referencesPageStatus" aria-live="polite"></span>
+    <button id="referencesNext" type="button">Next</button>
+  </nav>
+  <p class="small-note" id="referencesGalleryStatus" aria-live="polite">Loading references…</p>
+</section>
+
+<section id="collections" class="section warm">
+  <div class="section-head"><div><p class="eyebrow">STARTING CATALOGUE</p><h2>Choose an idea, then make it yours.</h2></div><p class="muted">Starting prices are indicative. Final quotes depend on size, detail, materials, frame and personalization.</p></div>
+  <div class="products">
+    <article class="product"><img data-idea-reference="Names & Initials" alt="Personalized name quilling reference"><div class="product-body"><span class="tag">POPULAR</span><span class="tag idea-reference-id" hidden></span><h3>Personalized Name Frame</h3><p>Names, dates, floral elements and colour themes arranged into a framed quilling composition.</p><div class="product-foot"><strong>From ₹1,499</strong><button data-product="Personalized Name Frame">Enquire</button></div></div></article>
+    <article class="product"><img data-idea-reference="Celebrations" alt="Birthday quilling reference"><div class="product-body"><span class="tag">CELEBRATIONS</span><span class="tag idea-reference-id" hidden></span><h3>Birthday / Occasion Frame</h3><p>Birthday, anniversary, friendship, teacher or family memory designs with a personal message.</p><div class="product-foot"><strong>From ₹1,999</strong><button data-product="Birthday / Occasion Frame">Enquire</button></div></div></article>
+    <article class="product"><img data-idea-reference="People & Portraits" alt="Custom quilling artwork reference"><div class="product-body"><span class="tag">PERSONALIZED</span><span class="tag idea-reference-id" hidden></span><h3>Couple / Portrait Quilling</h3><p>Send a photo or reference and discuss a custom quilled interpretation with names, date or message.</p><div class="product-foot"><strong>From ₹2,999</strong><button data-product="Couple / Portrait Quilling">Enquire</button></div></div></article>
+    <article class="product"><img data-idea-reference="Floral & Nature" alt="Floral custom quilling reference"><div class="product-body"><span class="tag">CUSTOM</span><span class="tag idea-reference-id" hidden></span><h3>Family / Baby / Floral</h3><p>Family memories, baby themes, flowers, characters and other paper-art ideas can be discussed from a reference.</p><div class="product-foot"><strong>From ₹1,999</strong><button data-product="Family / Baby / Floral">Enquire</button></div></div></article>
+    <article class="product"><img data-idea-reference="Names & Initials" alt="Nameplate quilling reference"><div class="product-body"><span class="tag">HOME</span><span class="tag idea-reference-id" hidden></span><h3>Nameplate / Home Decor</h3><p>Personalized names, initials and decorative quilling for rooms, gifts and home displays.</p><div class="product-foot"><strong>From ₹1,799</strong><button data-product="Nameplate / Home Decor">Enquire</button></div></div></article>
+    <article class="product minimal"><div class="product-icon">✦</div><div class="product-body"><span class="tag">PREMIUM</span><h3>Large Custom Artwork</h3><p>Larger frames, intricate borders, multiple subjects or detailed themes are quoted after a brief.</p><div class="product-foot"><strong>Quote after brief</strong><button data-product="Large Custom Artwork">Enquire</button></div></div></article>
+  </div>
+</section>
+
+<section id="custom" class="section custom-section">
+  <div class="custom-intro">
+    <h2>Choose an artwork or bring your own idea.</h2>
+    <p><strong>A. Existing artwork:</strong> pick something from the portfolio/catalogue and ask for a similar version.</p>
+    <p><strong>B. Custom artwork:</strong> upload your own reference photo and describe exactly what you want.</p>
+    <div class="contact-card"><div><span>Contact</span><strong>Use the enquiry form</strong></div><a href="#enquiryForm">Start an enquiry ↓</a></div>
+  </div>
+  <form id="enquiryForm" class="enquiry-form">
+    <div class="form-grid">
+      <label>Name*<input name="name" required placeholder="Your name"></label>
+      <label>WhatsApp*<input name="phone" required inputmode="tel" placeholder="10-digit number"></label>
+      <label>Email (optional)<input name="email" type="email" placeholder="you@example.com"></label>
+      <label>Where did you contact us?<select name="source" id="source"><option>Website</option><option>Instagram</option><option>WhatsApp</option><option>Other</option></select></label>
+      <label>Enquiry type<select name="type" id="type"><option>Existing artwork</option><option>Custom artwork</option></select></label>
+      <label>Artwork / idea<select name="product" id="productSelect"><option>Personalized Name Frame</option><option>Birthday / Occasion Frame</option><option>Couple / Portrait Quilling</option><option>Family / Baby / Floral</option><option>Nameplate / Home Decor</option><option>Large Custom Artwork</option><option>Custom artwork</option><option>Something else</option></select></label>
+      <label>Preferred size / format<input name="size" placeholder="e.g. 8×12, A4, not sure"></label>
+      <label>Budget (optional)<input name="budget" placeholder="e.g. ₹1,500–₹2,500"></label>
+      <label class="full">Tell me about your idea*<textarea name="message" required rows="5" placeholder="Name(s), occasion, colours, date, message, reference details..."></textarea></label>
+      <div class="full reference-upload">
+        <label class="file-label" for="reference">Reference image (optional)<input id="reference" name="reference" type="file" accept="image/*"><span id="fileName">JPG / PNG / WEBP • up to 5 MB</span></label>
+        <div class="selected-reference" id="selectedReference" hidden>
+          <img id="selectedReferenceImage" alt="Selected catalogue image">
+          <div><strong id="selectedReferenceId"></strong><span id="selectedReferenceName"></span></div>
+        </div>
+      </div>
+      <div class="full manual-reference">
+        <label for="referenceIdLookup">Have a reference ID? Enter it to attach that image</label>
+        <div class="reference-id-controls">
+          <input id="referenceIdLookup" type="text" placeholder="e.g. RF006" autocomplete="off" aria-describedby="referenceIdStatus">
+          <button class="btn ghost" id="referenceIdLookupButton" type="button">Find reference</button>
+        </div>
+        <span id="referenceIdStatus" class="small-note" aria-live="polite"></span>
+      </div>
+      <input type="hidden" name="referenceId" id="referenceId">
+      <input type="hidden" name="artworkId" id="artworkId">
+    </div>
+    <div class="form-bottom"><p id="formStatus" class="form-status"></p><button class="btn primary" type="submit">Send enquiry →</button></div>
+  </form>
+</section>
+
+<section id="how" class="section steps">
+  <div class="section-head"><div><p class="eyebrow">SIMPLE PROCESS</p><h2>From idea to finished frame.</h2></div></div>
+  <div class="step-grid">
+    <div><span>01</span><h3>Choose or describe</h3><p>Pick an existing artwork idea or send your own reference photo and brief.</p></div>
+    <div><span>02</span><h3>Rathana discusses</h3><p>You receive direct WhatsApp follow-up to confirm design, size, final price and timeline.</p></div>
+    <div><span>03</span><h3>Handmade & delivered</h3><p>Once confirmed, the artwork is made and prepared for delivery across India.</p></div>
+  </div>
+</section>
+
+<section class="section channel-section">
+  <div class="section-head"><div><p class="eyebrow">FIND LUNA QUILLING</p><h2>Use whichever channel is easiest.</h2></div></div>
+  <div class="channel-grid">
+    <a class="channel-card" href="https://www.instagram.com/lunaquilling/" target="_blank" rel="noopener"><span>📷</span><strong>Instagram</strong><small>@lunaquilling</small></a>
+    <a class="channel-card" href="#enquiryForm"><span>💬</span><strong>WhatsApp follow-up</strong><small>Request a reply through the enquiry form</small></a>
+    <a class="channel-card" href="mailto:lunaquilling@gmail.com"><span>✉️</span><strong>Email</strong><small>lunaquilling@gmail.com</small></a>
+  </div>
+</section>
+
+<section class="closing">
+  <img src="assets/logo.jpeg" alt="Luna Quilling">
+  <div><p class="eyebrow">LUNA QUILLING</p><h2>Crafting your memories.</h2><p>Questions? Talk directly with Rathana.</p></div>
+  <a class="btn primary" href="#enquiryForm">Send an enquiry</a>
+</section>
+</main>
+
+<footer><span>© <span id="year"></span> Luna Quilling</span><span>Made with paper & patience</span><a href="https://www.instagram.com/lunaquilling/" target="_blank" rel="noopener">@lunaquilling ↗</a></footer>
+<script src="config.js"></script><script src="script.js?v=gallery-catalog-20260929"></script>
+</body>
+</html>
