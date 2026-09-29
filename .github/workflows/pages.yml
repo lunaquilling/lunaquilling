@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.ref_name }}
       - name: Build image catalogue and website
         shell: pwsh
         run: ./build-site.ps1
