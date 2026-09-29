@@ -1,21 +1,3 @@
-/*
-LUNA QUILLING — CENTRAL ENQUIRY SYSTEM
-
-What this does:
-- Creates one Google Sheet as the central enquiry database.
-- Creates a Dashboard tab with counts by status/source.
-- Creates a Google Drive folder for customer reference images.
-- Creates a Work Catalogue tab and a dedicated Drive folder for Work images.
-- Accepts website enquiries through doPost().
-- Stores enquiries from Website / Instagram / WhatsApp / Other in the same table.
-- Emails Rathana when a new enquiry arrives.
-- Sends a customer acknowledgement when an email address is supplied.
-
-IMPORTANT:
-Run setupLunaQuilling() once, approve the Google permissions, then deploy as a Web app.
-Execute as: Me
-Who has access: Anyone
-*/
 
 const OWNER_EMAIL = 'lunaquilling@gmail.com';
 const SPREADSHEET_NAME = 'Luna Quilling — Enquiry Centre';
