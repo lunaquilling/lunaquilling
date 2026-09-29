@@ -1,4 +1,3 @@
-
 const OWNER_EMAIL = 'lunaquilling@gmail.com';
 const SPREADSHEET_NAME = 'Luna Quilling — Enquiry Centre';
 const SHEET_NAME = 'Enquiries';
